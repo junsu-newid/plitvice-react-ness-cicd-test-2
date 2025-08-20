@@ -6,3 +6,5 @@
 **/.idea
 **/.DS_Store
 **/pnpm-lock.yaml
+**/web/*
+**/!web/.gitkeep

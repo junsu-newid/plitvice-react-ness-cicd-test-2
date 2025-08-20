@@ -1,6 +1,5 @@
 import React from 'react';
 import { DayButtonProps, DayPickerProps, NavProps } from 'react-day-picker';
-
 import ChevronIcon from '@/assets/icChevron.svg?react';
 
 export const defaultDayPickerProps: Partial<DayPickerProps> = {

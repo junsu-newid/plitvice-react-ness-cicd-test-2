@@ -1,12 +1,8 @@
 import React, { useCallback } from 'react';
-
 import useSearchField from '@/components/textfield/searchInput.hooks';
-
 import { BoxComponentStyles, Size } from '@/types/common';
-
 import IconSearch from '@/assets/icSearch.svg?react';
 import IconTextClear from '@/assets/icTextClear.svg?react';
-
 import InputBox from './InputBox';
 
 export interface SearchFieldProps {

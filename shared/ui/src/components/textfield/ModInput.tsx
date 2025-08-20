@@ -1,11 +1,7 @@
 import React, { useCallback } from 'react';
-
 import useModInput from '@/components/textfield/modInput.hooks';
-
 import { BoxComponentStyles, Size } from '@/types/common';
-
 import IconReset from '@/assets/icReset.svg?react';
-
 import InputBox from './InputBox';
 
 export interface ModifiedInputProps {

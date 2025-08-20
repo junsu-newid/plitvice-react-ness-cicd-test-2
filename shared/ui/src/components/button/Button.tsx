@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-
 import { CustomComponentProps, Size } from '@/types/common';
 
 interface ButtonProps extends CustomComponentProps<'button'> {

@@ -1,6 +1,5 @@
-import type { Preview } from '@storybook/react';
-
 import '../src/styles/global.css';
+import type { Preview } from '@storybook/react';
 
 const preview: Preview = {
     // 모든 story 공통 지정

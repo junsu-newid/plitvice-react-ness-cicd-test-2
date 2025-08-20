@@ -1,6 +1,5 @@
 import { ComboBox, ComboBoxProps } from '@/components/selectbox/ComboBox';
 import { SelectOption } from '@/components/selectbox/DropdownList';
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 const sizes = ['medium', 'large'] as const;

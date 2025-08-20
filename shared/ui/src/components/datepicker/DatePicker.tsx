@@ -1,9 +1,7 @@
 import React, { ForwardRefExoticComponent, ReactNode, RefAttributes } from 'react';
 import { DayPicker, DayPickerProps } from 'react-day-picker';
-
 import { defaultDayPickerProps } from '@/components/datepicker/DatePicker.custom';
 import { BoxConfig, BoxState, DEFAULT_BOX_STATE, isBoxValid } from '@/components/datepicker/DatePicker.types';
-
 import { CalenderIcon } from '@/index';
 
 export interface DatePickerContainerProps {

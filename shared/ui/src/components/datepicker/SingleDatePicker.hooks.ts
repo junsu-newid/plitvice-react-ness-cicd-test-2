@@ -1,7 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-
 import { getHours, getMinutes, isSameMonth, startOfDay } from 'date-fns';
-
 import {
     BoxState,
     DEFAULT_BOX_STATE,

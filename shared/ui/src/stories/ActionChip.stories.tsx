@@ -1,7 +1,5 @@
 import { COLOR_STYLES, SIZE_STYLES, ActionChip } from '@/components/chips/ActionChip';
-
 import IconSearch from '@/assets/icSearch.svg?react';
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 const SIZES = Object.keys(SIZE_STYLES);

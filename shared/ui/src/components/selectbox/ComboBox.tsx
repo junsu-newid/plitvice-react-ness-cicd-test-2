@@ -1,11 +1,8 @@
 import useComboBox from '@/components/selectbox/comboBox.hooks';
 import { DropdownList, SelectOption } from '@/components/selectbox/DropdownList';
 import { SelectBoxProps } from '@/components/selectbox/SelectBox';
-
 import { LabeledInput } from '@/components/textfield/LabeledInput';
-
 import { BoxComponentStyles, LabelPosition, Size } from '@/types/common';
-
 import DropdownIcon from '@/assets/icDropdownArrow.svg?react';
 
 type ComboBoxSize = Extract<Size, 'medium' | 'large'>;

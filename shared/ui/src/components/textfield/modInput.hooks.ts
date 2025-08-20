@@ -1,5 +1,4 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
-
 import { useInput } from '@/hooks/useInput';
 
 interface UseModifiedInputParams {

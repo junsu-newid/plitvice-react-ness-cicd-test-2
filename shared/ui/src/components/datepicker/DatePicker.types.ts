@@ -1,6 +1,5 @@
 import React from 'react';
 import { Locale } from 'react-day-picker';
-
 import { enUS } from 'date-fns/locale';
 
 export type PickerType = 'single' | 'range';

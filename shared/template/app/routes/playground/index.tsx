@@ -1,31 +1,28 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
 import { addDays, startOfDay } from 'date-fns';
 import { ko } from 'date-fns/locale';
-
 import {
-    SingleDatePickerBox,
-    DateRange,
-    DateRangePickerBox,
+    ActionChip,
     Button,
-    Drawer,
-    Tooltip,
-    useToast,
-    InfoIcon,
     Checkbox,
     CopyTooltip,
+    DateRange,
+    DateRangePickerBox,
+    Drawer,
+    InfoIcon,
+    RadioButton,
+    SingleDatePickerBox,
     TabMenu,
-    ActionChip,
+    Tooltip,
+    useToast,
 } from '@plitvice/ui';
-import { RadioButton } from '@plitvice/ui/components/button/RadioButton';
-import '@plitvice/ui/styles/global.css';
 
-function App() {
+export function Index() {
     const { t } = useTranslation();
-    const [open, setOpen] = useState<boolean>(false);
-
     const { showToast } = useToast();
+
+    const [open, setOpen] = useState<boolean>(false);
 
     const toggleDrawer = (newOpen: boolean) => () => {
         setOpen(newOpen);
@@ -34,7 +31,7 @@ function App() {
     return (
         <div className="scrollbar relative mx-auto flex h-[100dvh] max-w-[1200px] flex-col items-center gap-3 overflow-auto">
             <h1 className="box-border w-full whitespace-nowrap break-words bg-gradient-to-r from-[rgb(0,111,185)] via-[rgb(111,44,135)] to-[rgb(221,37,20)] bg-clip-text text-center text-[10rem] leading-[1.2] text-transparent">
-                {t('common.appName')}
+                {t('common:appName')}
             </h1>
             <Button onClick={toggleDrawer(true)} variant={'normal'}>
                 Open
@@ -60,13 +57,10 @@ function App() {
                 ]}
             />
             <div className={`h-[400px]`} />
-            <SelectBox optionList={defaultComboBoxOptions} border={true} width={200} label={'test'} size={'medium'} />
             <DatePickerGroup />
         </div>
     );
 }
-
-export default App;
 
 const TooltipGroup = () => {
     const displayText = 'Proc Time';

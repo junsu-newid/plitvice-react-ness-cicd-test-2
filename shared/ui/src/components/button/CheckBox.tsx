@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState, useId } from 'react';
-
 import CheckmarkIcon from '@/assets/icCheckmark.svg?react';
 import IndeterminateIcon from '@/assets/icIndeterminate.svg?react';
 

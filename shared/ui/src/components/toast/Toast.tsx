@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import type { ToastMessage, ToastType } from './Toast.context';
 
 const TYPE_STYLES: { [key in ToastType]: { bg: string } } = {

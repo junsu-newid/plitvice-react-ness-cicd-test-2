@@ -8,6 +8,9 @@ import reactRefreshPlugin from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 
 export default [
+    {
+        ignores: ['**/node_modules/**', '**/dist/**', '**/build/**', '**/public/**', '**/.react-router/**'],
+    },
     eslint.configs.recommended,
     ...tseslint.configs.recommended,
     {
@@ -34,7 +37,7 @@ export default [
             'react/react-in-jsx-scope': 'off',
             'react-hooks/rules-of-hooks': 'error',
             'react-hooks/exhaustive-deps': 'warn',
-            'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+            'react-refresh/only-export-components': 'off',
             '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
             '@typescript-eslint/explicit-module-boundary-types': 'off',
             // import plugin rules
@@ -55,7 +58,6 @@ export default [
                         { pattern: '@/**', group: 'internal', position: 'after' },
                     ],
                     pathGroupsExcludedImportTypes: ['builtin'],
-                    'newlines-between': 'always-and-inside-groups',
                     warnOnUnassignedImports: true,
                     alphabetize: { order: 'asc', caseInsensitive: true },
                 },
@@ -68,7 +70,4 @@ export default [
         },
     },
     prettierConfig,
-    {
-        ignores: ['node_modules', 'dist', 'build', 'public', '**/.react-router'],
-    },
 ];

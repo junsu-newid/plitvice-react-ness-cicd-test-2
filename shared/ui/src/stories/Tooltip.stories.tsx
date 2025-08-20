@@ -1,9 +1,6 @@
 import { PlacesType } from 'react-tooltip';
-
 import { Tooltip } from '@/components/textfield/Tooltip';
-
 import { InfoIcon } from '@/index';
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 const TOOLTIP_PLACES: PlacesType[] = [

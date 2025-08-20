@@ -1,6 +1,5 @@
 import { SideNavBar } from '@/components/navigation/SideNavBar';
 import { SideNavSection } from '@/components/navigation/sideNavBar.types';
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof SideNavBar> = {

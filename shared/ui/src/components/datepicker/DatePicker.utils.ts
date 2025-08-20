@@ -1,5 +1,4 @@
 import { differenceInDays, format, getHours, getMinutes, isValid, parse } from 'date-fns';
-
 import { DEFAULT_TIME_STATE, ParsedDate, ParsedTime, ParsedValue } from '@/components/datepicker/DatePicker.types';
 
 export const isInvalidValue = <T>(value: ParsedValue<T> | undefined): boolean => {

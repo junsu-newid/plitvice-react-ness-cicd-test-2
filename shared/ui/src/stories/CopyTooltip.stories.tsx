@@ -1,7 +1,5 @@
 import { PlacesType } from 'react-tooltip';
-
 import { CopyTooltip } from '@/components/textfield/CopyTooltip';
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 const TOOLTIP_PLACES: PlacesType[] = [

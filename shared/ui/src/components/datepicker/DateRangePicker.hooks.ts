@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { DateRange } from 'react-day-picker';
-
 import {
     differenceInDays,
     getHours,
@@ -11,7 +10,6 @@ import {
     isSameMonth,
     startOfDay,
 } from 'date-fns';
-
 import {
     ParsedDate,
     ParsedTime,

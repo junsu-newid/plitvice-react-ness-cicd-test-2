@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { RadioButton } from '@/components/button/RadioButton';
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof RadioButton> = {

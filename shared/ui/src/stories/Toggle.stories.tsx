@@ -1,5 +1,4 @@
 import { Toggle } from '@/components/button/Toggle';
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Toggle> = {

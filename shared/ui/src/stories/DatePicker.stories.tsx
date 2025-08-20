@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
-
 import { Meta, StoryObj } from '@storybook/react';
 import { startOfDay } from 'date-fns';
 import { enUS, ko } from 'date-fns/locale';
-
 import { DEFAULT_BUTTON_TEXT_GROUP } from '@/components/datepicker/DatePicker.types';
 import { SINGLE_VALIDATION_MESSAGES } from '@/components/datepicker/SingleDatePicker';
-
 import { SingleDatePickerBox } from '@/index';
 
 const LOCALES = {

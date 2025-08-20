@@ -1,5 +1,4 @@
 import { useCallback, useRef, useState } from 'react';
-
 import { useInput } from '@/hooks/useInput';
 
 interface UseCellInputParams {

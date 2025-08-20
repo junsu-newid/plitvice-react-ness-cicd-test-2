@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { DayButtonProps, DayPickerProps } from 'react-day-picker';
-
 import 'react-day-picker/dist/style.css';
-
 import { DatePicker } from '@/components/datepicker/DatePicker';
 import { CustomDayButton } from '@/components/datepicker/DatePicker.custom';
 import {
@@ -15,7 +13,6 @@ import {
     ValidationState,
 } from '@/components/datepicker/DatePicker.types';
 import { useSingleDatePicker } from '@/components/datepicker/SingleDatePicker.hooks';
-
 import { InfoIcon, Tooltip } from '@/index';
 
 export const SINGLE_VALIDATION_MESSAGES: Record<ValidationErrorMap['single'], string> = {

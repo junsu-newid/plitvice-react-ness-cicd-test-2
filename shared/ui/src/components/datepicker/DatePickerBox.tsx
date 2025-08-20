@@ -1,9 +1,7 @@
 import { useMemo } from 'react';
 import { DateRange } from 'react-day-picker';
-
 import { format } from 'date-fns';
 import { enUS } from 'date-fns/locale';
-
 import {
     BaseDatePickerProps,
     DEFAULT_BUTTON_TEXT_GROUP,
@@ -20,7 +18,6 @@ import {
     SingleDatePicker,
     SingleDatePickerProps,
 } from '@/components/datepicker/SingleDatePicker';
-
 import { DatePicker } from './DatePicker';
 
 type DateBoxProps<T extends BaseDatePickerProps> = Pick<

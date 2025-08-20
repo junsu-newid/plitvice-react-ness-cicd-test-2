@@ -1,5 +1,4 @@
 import { Button } from '@/components/button/Button';
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 const sizes = ['large', 'medium', 'small'] as const;

@@ -1,5 +1,7 @@
-import { useInput } from '@/hooks/useInput';
 import React from 'react';
+
+import { useInput } from '@/hooks/useInput';
+
 import { BoxComponentStyles, Size } from '@/types/common';
 
 type TextAreaSize = Extract<Size, 'medium' | 'large'>;

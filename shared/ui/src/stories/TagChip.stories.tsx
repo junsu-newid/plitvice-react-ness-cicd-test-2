@@ -1,7 +1,10 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+
 import { TagChip, DefaultChipProps } from '@/components/chips/TagChip';
+
 import IconDragHandle from '@/assets/icDragHandle.svg?react';
+
+import type { Meta, StoryObj } from '@storybook/react';
 
 const variants = ['default', 'removeOutline', 'removeSolid', 'movable'] as const;
 

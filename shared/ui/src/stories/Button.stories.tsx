@@ -1,5 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from '@/components/button/Button';
+
+import type { Meta, StoryObj } from '@storybook/react';
 
 const sizes = ['large', 'medium', 'small'] as const;
 const variants = ['default', 'normal', 'alert'] as const;

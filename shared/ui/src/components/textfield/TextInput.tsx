@@ -1,6 +1,7 @@
-import { LabelPosition, Size } from '@/types/common';
-import useTextField from '@/components/textfield/textInput.hooks';
 import { LabeledInput } from '@/components/textfield/LabeledInput';
+import useTextField from '@/components/textfield/textInput.hooks';
+
+import { LabelPosition, Size } from '@/types/common';
 
 type TextInputSize = Extract<Size, 'medium' | 'large'>;
 

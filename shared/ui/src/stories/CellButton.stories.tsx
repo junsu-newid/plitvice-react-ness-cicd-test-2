@@ -1,5 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react';
 import { CellButton, CellButtonProps } from '@/components/button/CellButton';
+
+import type { Meta, StoryObj } from '@storybook/react';
 
 const sizes = ['large', 'medium', 'small'] as const;
 

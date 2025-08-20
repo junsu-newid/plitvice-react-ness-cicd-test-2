@@ -1,5 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react';
 import { statusColors, StatusChip, StatusChipProps } from '@/components/chips/StatusChip';
+
+import type { Meta, StoryObj } from '@storybook/react';
 
 type StoryArgProps = StatusChipProps;
 

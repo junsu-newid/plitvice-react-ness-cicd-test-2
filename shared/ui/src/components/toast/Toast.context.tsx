@@ -1,5 +1,6 @@
 import { createContext, useState, useCallback, ReactNode, useEffect } from 'react';
 import { createPortal } from 'react-dom';
+
 import Toast from './Toast';
 
 export type ToastType = 'success' | 'error' | 'info' | 'warning';

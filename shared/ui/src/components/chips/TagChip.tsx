@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+
 import IconClear from '@/assets/icDefaultChipClear.svg?react';
 import IconClose from '@/assets/icDefaultChipClose.svg?react';
 

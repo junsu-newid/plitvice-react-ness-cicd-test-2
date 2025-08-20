@@ -1,8 +1,9 @@
-import { useTranslation } from 'react-i18next';
-import '@plitvice/ui/styles/global.css';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import { addDays, startOfDay } from 'date-fns';
 import { ko } from 'date-fns/locale';
+
 import {
     SingleDatePickerBox,
     DateRange,
@@ -18,6 +19,7 @@ import {
     ActionChip,
 } from '@plitvice/ui';
 import { RadioButton } from '@plitvice/ui/components/button/RadioButton';
+import '@plitvice/ui/styles/global.css';
 
 function App() {
     const { t } = useTranslation();

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
+
 import { useInput } from '@/hooks/useInput';
 
 const useSearchField = (

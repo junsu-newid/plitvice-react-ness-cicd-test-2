@@ -1,7 +1,10 @@
-import { BoxComponentStyles, Size } from '@/types/common';
-import useSelectBox from '@/components/selectbox/selectBox.hooks';
 import { SelectOption, DropdownList } from '@/components/selectbox/DropdownList';
+import useSelectBox from '@/components/selectbox/selectBox.hooks';
+
+import { BoxComponentStyles, Size } from '@/types/common';
+
 import DropdownIcon from '@/assets/icDropdownArrow.svg?react';
+
 import { LabeledInput } from '../textfield/LabeledInput';
 
 type SelectBoxSize = Extract<Size, 'small' | 'medium'>;

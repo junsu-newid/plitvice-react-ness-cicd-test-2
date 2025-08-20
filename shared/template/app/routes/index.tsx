@@ -3,7 +3,7 @@ import type { Route } from '../+types/root';
 
 // eslint-disable-next-line no-empty-pattern
 export function meta({}: Route.MetaArgs) {
-    return [{ title: 'New React Router App' }, { name: 'description', content: 'Welcome to React Router!' }];
+    return [{ title: 'NEWID' }, { name: 'description', content: 'Welcome to Playout+' }];
 }
 
 function Index() {

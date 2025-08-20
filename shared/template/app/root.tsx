@@ -16,6 +16,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
                 {/* Favicon, Apple Touch Icon */}
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+                <link rel="icon" href="/favicon.ico" />
                 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
                 <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png" />
 

@@ -15,7 +15,7 @@ const COLOR_STYLES = {
 } as const;
 
 export type StatusColor = keyof typeof COLOR_STYLES;
-// eslint-disable-next-line react-refresh/only-export-components
+
 export const statusColors: StatusColor[] = Object.keys(COLOR_STYLES) as StatusColor[];
 
 export interface StatusChipProps {

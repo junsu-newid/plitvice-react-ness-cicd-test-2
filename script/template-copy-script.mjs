@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { mkdir, cp, readFile, writeFile } from 'fs/promises';
 import { existsSync } from 'fs';
 import path from 'path';
@@ -34,7 +35,7 @@ async function createProject() {
             console.error('🚫 Please enter a project name. Usage: pnpm scaffolding <project-name>');
             process.exit(1);
         }
-        const projectPath = path.join('app', projectName);
+        const projectPath = path.join('web', projectName);
         const templateDir = path.join('shared', 'template');
 
         if (existsSync(projectPath)) {
@@ -48,7 +49,17 @@ async function createProject() {
         }
 
         await mkdir(projectPath, { recursive: true });
-        await cp(templateDir, projectPath, { recursive: true });
+        await cp(templateDir, projectPath, {
+            recursive: true,
+            filter: (src) => {
+                const relativePath = path.relative(templateDir, src);
+                return (
+                    !relativePath.includes('node_modules') &&
+                    !relativePath.includes('build') &&
+                    !relativePath.includes('.react-router')
+                );
+            },
+        });
 
         const gitignorePath = path.join(templateDir, '.gitignore');
         if (existsSync(gitignorePath)) {
@@ -60,7 +71,7 @@ async function createProject() {
         packageJson.name = projectName;
         await writeFile(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
-        const tsconfigPath = path.join(projectPath, 'tsconfig.app.json');
+        const tsconfigPath = path.join(projectPath, 'tsconfig.web.json');
         if (existsSync(tsconfigPath)) {
             let tsconfigContent = await readFile(tsconfigPath, 'utf8');
             tsconfigContent = updateTsconfigPaths(tsconfigContent);

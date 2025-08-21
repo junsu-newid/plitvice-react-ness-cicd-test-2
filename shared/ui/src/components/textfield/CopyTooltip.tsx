@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef, useState } from 'react';
-import { Tooltip, TooltipProps } from '@/components/textfield/Tooltip';
 import { copyToClipboard } from '@plitvice/util';
+import { Tooltip, TooltipProps } from '@/components/textfield/Tooltip';
 
 type Props = Pick<TooltipProps, 'className' | 'text' | 'place' | 'maxWidth'>;
 

@@ -1,6 +1,6 @@
+import React from 'react';
 import { DayButtonProps, DayPickerProps, NavProps } from 'react-day-picker';
 import ChevronIcon from '@/assets/icChevron.svg?react';
-import React from 'react';
 
 export const defaultDayPickerProps: Partial<DayPickerProps> = {
     showOutsideDays: true,

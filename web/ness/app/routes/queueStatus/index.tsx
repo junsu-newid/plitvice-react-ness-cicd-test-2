@@ -114,8 +114,8 @@ const Index = () => {
             </div>
             <div className="border-grey-20 relative flex-1 overflow-auto rounded-[4px] border bg-white">
                 {(!filteredDataList || filteredDataList.length === 0) && (
-                    <div className="text-grey-90 flex h-full items-center justify-center">
-                        업로드된 파일이 없습니다.
+                    <div className="text-grey-50 flex h-full items-center justify-center">
+                        {t('queueStatus:emptyList')}
                     </div>
                 )}
                 <Table data={filteredDataList} onItemClick={setSelectedItem} />

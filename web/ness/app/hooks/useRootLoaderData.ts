@@ -1,7 +1,5 @@
 import { useRouteLoaderData } from 'react-router';
-
 import { RootLoaderData } from '@/routes/index.tsx';
-
 import { GLOBAL_ROUTE_ID } from '@/types/enum.ts';
 
 export const useRootLoaderData = () => {

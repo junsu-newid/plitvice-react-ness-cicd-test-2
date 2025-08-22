@@ -11,5 +11,6 @@
     "tableCol2": "Instance Name",
     "tableCol3": "Instance ID",
     "tableCol4": "Created At",
-    "tableCol5": "Updated At"
+    "tableCol5": "Updated At",
+    "emptyList": "No available server."
 }

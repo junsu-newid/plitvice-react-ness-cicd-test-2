@@ -63,7 +63,7 @@ const Index = () => {
             <div className="border-grey-20 relative h-full overflow-auto rounded-[4px] border bg-white">
                 {(!filteredData || filteredData.length === 0) && (
                     <div className="text-grey-50 flex h-full items-center justify-center">
-                        {t('presetList.emptyList')}
+                        {t('serverStatus:emptyList')}
                     </div>
                 )}
                 <Table data={filteredData} />

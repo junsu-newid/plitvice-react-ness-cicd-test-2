@@ -1,26 +1,9 @@
 import { useMemo } from 'react';
-
 import { useTranslation } from 'react-i18next';
-
-import { Outlet, redirect, useNavigate } from 'react-router';
-
+import { Outlet, useNavigate } from 'react-router';
 import { TFunction } from 'i18next';
-
 import { SideNavBar } from '@plitvice/ui/components/navigation/SideNavBar.tsx';
 import { SideNavSection } from '@plitvice/ui/components/navigation/sideNavBar.types.ts';
-
-import { withSession } from '@/libs/auth.server.ts';
-import { isNEWID } from '@/utils';
-
-export const loader = withSession(
-    async ({ userEncryptKey, userGroup }: { userEncryptKey: string; userGroup: string[] }) => {
-        if (isNEWID(userGroup)) {
-            return { userEncryptKey, userGroup };
-        } else {
-            return redirect('deny');
-        }
-    },
-);
 
 const Layout = () => {
     const { t } = useTranslation();

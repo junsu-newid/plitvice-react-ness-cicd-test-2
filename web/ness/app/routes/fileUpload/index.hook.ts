@@ -129,7 +129,6 @@ export const useFileUpload = (userEncryptKey: string) => {
 
         for (const file of fileList) {
             if (file.status === 'pending') {
-                console.log(file.origin.name);
                 const handleProgress = (progress: number) =>
                     setFileList((prev) =>
                         prev.map((prevFile) =>

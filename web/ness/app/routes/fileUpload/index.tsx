@@ -1,23 +1,15 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
 import { TFunction } from 'i18next';
-
 import { TabMenu } from '@plitvice/ui/components/navigation/TabMenu.tsx';
 import { SelectOption } from '@plitvice/ui/components/selectbox/DropdownList.tsx';
-
 import { WarningIcon } from '@plitvice/ui/index.ts';
-
 import { fetchPresetList } from '@/api/services/preset.ts';
-
 import { useRootLoaderData } from '@/hooks/useRootLoaderData.ts';
-
 import { FileUploadedTable } from '@/routes/fileUpload/_uploaded.table.tsx';
 import { FileUploadingTable } from '@/routes/fileUpload/_uploading.table.tsx';
 import { useFileUpload } from '@/routes/fileUpload/index.hook.ts';
-
 import '@/styles/global.css';
-import { isNEWID } from '@/utils';
 
 enum TabMenuType {
     UPLOADING = 'uploading',
@@ -26,7 +18,7 @@ enum TabMenuType {
 
 const Index = () => {
     const { t } = useTranslation();
-    const { userEncryptKey, userGroup } = useRootLoaderData();
+    const { userEncryptKey, isNEWID } = useRootLoaderData();
     const [tabMenu, setTabMenu] = useState(TabMenuType.UPLOADING);
     const presetList = useMemo<SelectOption[]>(() => [], []);
     const { isUploading, fileList, setFileList, removeFile, runUpload, pauseUpload } = useFileUpload(userEncryptKey);
@@ -63,7 +55,7 @@ const Index = () => {
                 <p className={`text-r14 text-grey-60 mt-[12px] whitespace-pre-line pb-[24px]`}>
                     {t('fileUpload:description')}
                 </p>
-                {isNEWID(userGroup) ? (
+                {isNEWID ? (
                     <>
                         <div className={`relative`}>
                             <TabMenu

@@ -17,5 +17,6 @@
     "tableCol7": "Created At",
     "drawerTitle0": "Started At",
     "drawerTitle1": "Finished At",
-    "drawerTitle2": "Note"
+    "drawerTitle2": "Note",
+    "emptyList": "Empty queue."
 }

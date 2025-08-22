@@ -1,7 +1,7 @@
 {
     "name": "ness",
     "private": true,
-    "version": "0.1.2",
+    "version": "0.9.0",
     "type": "module",
     "scripts": {
         "build": "react-router build",

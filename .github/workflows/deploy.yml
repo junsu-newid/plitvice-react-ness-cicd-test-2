@@ -33,6 +33,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Create environment file
+        run: |
+          echo "${{ secrets.STAGE_ENV }}" > web/ness/.env.stage
+
       - name: Build web projects
         run: pnpm -r build
 

@@ -7,4 +7,6 @@
 **/.DS_Store
 **/pnpm-lock.yaml
 **/web/*
-**/!web/.gitkeep
+!web/.gitkeep
+!web/ness/**
+!web/paro/**

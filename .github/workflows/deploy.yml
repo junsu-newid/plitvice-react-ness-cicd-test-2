@@ -1,15 +1,15 @@
-name: Deploy
-
-on:
-  pull_request:
-    types: [closed]
-    branches:
-      - stage
+name: Deploy ness
 
 # on:
-#   push:
+#   pull_request:
+#     types: [closed]
 #     branches:
 #       - stage
+
+on:
+  push:
+    branches:
+      - ness/master-dy
 
 jobs:
   deploy:
@@ -38,57 +38,19 @@ jobs:
           echo "${{ secrets.STAGE_ENV }}" > web/ness/.env.stage
 
       - name: Build web projects
-        run: pnpm -r build
+        run: |
+          cd web/ness
+          pnpm build
 
       - name: Prepare deployment package
         run: |
           # Create deployment directory structure
-          mkdir -p plitvice/web
-          mkdir -p plitvice/shared/ui
-          mkdir -p plitvice/shared/util
-          
-          # Copy web projects with build and package.json
-          for project in web/*; do
-            if [ -d "$project" ] && [ -f "$project/package.json" ]; then
-              name=$(basename $project)
-              echo "Preparing $name..."
-              mkdir -p "plitvice/web/$name"
-              cp -r "$project/build" "plitvice/web/$name/"
-              cp "$project/package.json" "plitvice/web/$name/"
-            fi
-          done
-          
-          # Copy shared projects with dist and package.json (excluding template)
-          for project in shared/*; do
-            if [ -d "$project" ] && [ -f "$project/package.json" ]; then
-              name=$(basename $project)
-              # Skip template project
-              if [ "$name" = "template" ]; then
-                echo "Skipping template project"
-                continue
-              fi
-              echo "Preparing shared project: $name"
-              mkdir -p "plitvice/shared/$name"
-              # Copy dist directory (build output) if it exists
-              if [ -d "$project/dist" ]; then
-                cp -r "$project/dist" "plitvice/shared/$name/"
-              fi
-              # Copy build directory (if it exists for some projects)
-              if [ -d "$project/build" ]; then
-                cp -r "$project/build" "plitvice/shared/$name/"
-              fi
-              cp "$project/package.json" "plitvice/shared/$name/"
-            fi
-          done
-          
-          # Copy root files
-          cp ecosystem.config.cjs plitvice/ || true
-          cp package.json plitvice/
-          cp pnpm-lock.yaml plitvice/
-          cp pnpm-workspace.yaml plitvice/
-          
-          echo "Deployment package structure:"
-          find plitvice -type f | sort
+
+          mkdir -p ness/
+          cp package.json ness/
+          cp pnpm-lock.yaml ness/
+          cp pnpm-workspace.yaml ness/
+          cp -r web/ness/build ness/
 
       - name: Upload deployment package
         uses: actions/upload-artifact@v4

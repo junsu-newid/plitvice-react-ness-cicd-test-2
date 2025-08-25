@@ -1,0 +1,12 @@
+{
+    "appName": "Ness Project",
+    "button": {
+        "save": "Save",
+        "cancel": "Cancel",
+        "close": "Close",
+        "start": "Start",
+        "stop": "Stop",
+        "apply": "Apply",
+        "reset": "Reset"
+    }
+}

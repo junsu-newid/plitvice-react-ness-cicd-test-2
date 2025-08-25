@@ -71,7 +71,7 @@ async function createProject() {
         packageJson.name = projectName;
         await writeFile(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
-        const tsconfigPath = path.join(projectPath, 'tsconfig.app.json');
+        const tsconfigPath = path.join(projectPath, 'tsconfig.web.json');
         if (existsSync(tsconfigPath)) {
             let tsconfigContent = await readFile(tsconfigPath, 'utf8');
             tsconfigContent = updateTsconfigPaths(tsconfigContent);

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2e3b0603-950b-42d2-a829-324d74cd2ccc" name="Changes" comment=":construction: 일단 진행중 로컬에서" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="hyungoo &lt;hyungoo@its-newid.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="stage" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;junsu-newid&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/its-newid/plitvice-react.git&quot;,
+    &quot;accountId&quot;: &quot;f720af18-7af3-469b-8392-06459aab4c46&quot;
+  }
+}</component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2u7QzWeoFbCSohO7qxuToXAMSaJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "ness/master",
+    "javascript.nodejs.core.library.configured.version": "22.17.1",
+    "javascript.nodejs.core.library.typings.version": "22.17.2",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "/Users/pjs/Desktop/plitvice-react/web/ness/app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "/Users/pjs/Desktop/plitvice-react/node_modules/eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "pnpm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/pjs/Desktop/plitvice-react/node_modules/prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Users/pjs/Desktop/plitvice-react/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/ness/app" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/web/paro" />
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/ness/app/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/paro" />
+      <recent name="$PROJECT_DIR$/web/ness/app/routes/serverStatus" />
+      <recent name="$PROJECT_DIR$/web/ness/app/routes/queueStatus" />
+      <recent name="$PROJECT_DIR$/web/ness/app/routes/presetList" />
+      <recent name="$PROJECT_DIR$/web/ness/app/routes/fileUpload" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e3b0603-950b-42d2-a829-324d74cd2ccc" name="Changes" comment="" />
+      <created>1741597395906</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741597395906</updated>
+      <workItem from="1741597397003" duration="56000" />
+      <workItem from="1741597458114" duration="714000" />
+      <workItem from="1741653932306" duration="51639000" />
+      <workItem from="1742172181152" duration="2228000" />
+      <workItem from="1742178294503" duration="109000" />
+      <workItem from="1742185227211" duration="472000" />
+      <workItem from="1742288695612" duration="464000" />
+      <workItem from="1742344456354" duration="9487000" />
+      <workItem from="1742358124143" duration="129000" />
+      <workItem from="1742365105698" duration="457458000" />
+      <workItem from="1744987780367" duration="2830000" />
+      <workItem from="1744991762265" duration="13000" />
+      <workItem from="1744993710261" duration="99275000" />
+      <workItem from="1746574471138" duration="12115000" />
+      <workItem from="1746756480352" duration="29792000" />
+      <workItem from="1747803746355" duration="58649000" />
+      <workItem from="1748243459723" duration="954000" />
+      <workItem from="1748244423045" duration="22099000" />
+      <workItem from="1748481858906" duration="8076000" />
+      <workItem from="1748495078233" duration="8030000" />
+      <workItem from="1749024588049" duration="291000" />
+      <workItem from="1751257336807" duration="20626000" />
+      <workItem from="1751340803376" duration="154770000" />
+      <workItem from="1752104735924" duration="27415000" />
+      <workItem from="1752214631996" duration="6872000" />
+      <workItem from="1752449451764" duration="1256000" />
+      <workItem from="1752455646427" duration="1317000" />
+      <workItem from="1752458113634" duration="248000" />
+      <workItem from="1752464908173" duration="644000" />
+      <workItem from="1752467204658" duration="36323000" />
+      <workItem from="1752637090810" duration="6865000" />
+      <workItem from="1752643980198" duration="2315000" />
+      <workItem from="1752712427993" duration="1398000" />
+      <workItem from="1752714942113" duration="4822000" />
+      <workItem from="1752727285632" duration="4948000" />
+      <workItem from="1753053867082" duration="1763000" />
+      <workItem from="1753063601773" duration="1470000" />
+      <workItem from="1753422316924" duration="2874000" />
+      <workItem from="1753766400639" duration="193000" />
+      <workItem from="1754357869703" duration="90537000" />
+      <workItem from="1754638476678" duration="98000" />
+      <workItem from="1754638585352" duration="12481000" />
+      <workItem from="1754876072910" duration="86259000" />
+      <workItem from="1755148225488" duration="139634000" />
+      <workItem from="1756078922541" duration="1696000" />
+    </task>
+    <task id="LOCAL-00584" summary=":clown_face: test7">
+      <option name="closed" value="true" />
+      <created>1755586605369</created>
+      <option name="number" value="00584" />
+      <option name="presentableId" value="LOCAL-00584" />
+      <option name="project" value="LOCAL" />
+      <updated>1755586605369</updated>
+    </task>
+    <task id="LOCAL-00585" summary=":clown_face: test8">
+      <option name="closed" value="true" />
+      <created>1755588285044</created>
+      <option name="number" value="00585" />
+      <option name="presentableId" value="LOCAL-00585" />
+      <option name="project" value="LOCAL" />
+      <updated>1755588285044</updated>
+    </task>
+    <task id="LOCAL-00586" summary=":art: health check 추가">
+      <option name="closed" value="true" />
+      <created>1755589238805</created>
+      <option name="number" value="00586" />
+      <option name="presentableId" value="LOCAL-00586" />
+      <option name="project" value="LOCAL" />
+      <updated>1755589238805</updated>
+    </task>
+    <task id="LOCAL-00587" summary=":heavy_plus_sign: actions시 의존성 이슈가 있어 수정">
+      <option name="closed" value="true" />
+      <created>1755589265683</created>
+      <option name="number" value="00587" />
+      <option name="presentableId" value="LOCAL-00587" />
+      <option name="project" value="LOCAL" />
+      <updated>1755589265683</updated>
+    </task>
+    <task id="LOCAL-00588" summary=":hammer: deploy-ness.yml 추가">
+      <option name="closed" value="true" />
+      <created>1755589306081</created>
+      <option name="number" value="00588" />
+      <option name="presentableId" value="LOCAL-00588" />
+      <option name="project" value="LOCAL" />
+      <updated>1755589306081</updated>
+    </task>
+    <task id="LOCAL-00589" summary=":bug: session secrets import를 process로 수정">
+      <option name="closed" value="true" />
+      <created>1755647232467</created>
+      <option name="number" value="00589" />
+      <option name="presentableId" value="LOCAL-00589" />
+      <option name="project" value="LOCAL" />
+      <updated>1755647232467</updated>
+    </task>
+    <task id="LOCAL-00590" summary=":clown_face: url encrypt test 진행중">
+      <option name="closed" value="true" />
+      <created>1755649411206</created>
+      <option name="number" value="00590" />
+      <option name="presentableId" value="LOCAL-00590" />
+      <option name="project" value="LOCAL" />
+      <updated>1755649411206</updated>
+    </task>
+    <task id="LOCAL-00591" summary=":construction_worker: cicd 진행중">
+      <option name="closed" value="true" />
+      <created>1755669348454</created>
+      <option name="number" value="00591" />
+      <option name="presentableId" value="LOCAL-00591" />
+      <option name="project" value="LOCAL" />
+      <updated>1755669348454</updated>
+    </task>
+    <task id="LOCAL-00592" summary=":construction_worker: cicd 진행중2">
+      <option name="closed" value="true" />
+      <created>1755669771759</created>
+      <option name="number" value="00592" />
+      <option name="presentableId" value="LOCAL-00592" />
+      <option name="project" value="LOCAL" />
+      <updated>1755669771759</updated>
+    </task>
+    <task id="LOCAL-00593" summary=":construction_worker: cicd 진행중3">
+      <option name="closed" value="true" />
+      <created>1755670550043</created>
+      <option name="number" value="00593" />
+      <option name="presentableId" value="LOCAL-00593" />
+      <option name="project" value="LOCAL" />
+      <updated>1755670550043</updated>
+    </task>
+    <task id="LOCAL-00594" summary=":construction_worker: cicd 진행중5">
+      <option name="closed" value="true" />
+      <created>1755670901333</created>
+      <option name="number" value="00594" />
+      <option name="presentableId" value="LOCAL-00594" />
+      <option name="project" value="LOCAL" />
+      <updated>1755670901333</updated>
+    </task>
+    <task id="LOCAL-00595" summary=":construction_worker: cicd 진행중6">
+      <option name="closed" value="true" />
+      <created>1755671169195</created>
+      <option name="number" value="00595" />
+      <option name="presentableId" value="LOCAL-00595" />
+      <option name="project" value="LOCAL" />
+      <updated>1755671169195</updated>
+    </task>
+    <task id="LOCAL-00596" summary=":construction_worker: cicd 진행중7">
+      <option name="closed" value="true" />
+      <created>1755671295050</created>
+      <option name="number" value="00596" />
+      <option name="presentableId" value="LOCAL-00596" />
+      <option name="project" value="LOCAL" />
+      <updated>1755671295051</updated>
+    </task>
+    <task id="LOCAL-00597" summary=":construction_worker: cicd 진행중8">
+      <option name="closed" value="true" />
+      <created>1755671824325</created>
+      <option name="number" value="00597" />
+      <option name="presentableId" value="LOCAL-00597" />
+      <option name="project" value="LOCAL" />
+      <updated>1755671824325</updated>
+    </task>
+    <task id="LOCAL-00598" summary=":construction_worker: cicd 진행중9">
+      <option name="closed" value="true" />
+      <created>1755672029651</created>
+      <option name="number" value="00598" />
+      <option name="presentableId" value="LOCAL-00598" />
+      <option name="project" value="LOCAL" />
+      <updated>1755672029651</updated>
+    </task>
+    <task id="LOCAL-00599" summary=":construction_worker: cicd 진행중10">
+      <option name="closed" value="true" />
+      <created>1755672367531</created>
+      <option name="number" value="00599" />
+      <option name="presentableId" value="LOCAL-00599" />
+      <option name="project" value="LOCAL" />
+      <updated>1755672367531</updated>
+    </task>
+    <task id="LOCAL-00600" summary=":construction_worker: cicd 진행중11">
+      <option name="closed" value="true" />
+      <created>1755673182296</created>
+      <option name="number" value="00600" />
+      <option name="presentableId" value="LOCAL-00600" />
+      <option name="project" value="LOCAL" />
+      <updated>1755673182296</updated>
+    </task>
+    <task id="LOCAL-00601" summary=":construction_worker: cicd 진행중12">
+      <option name="closed" value="true" />
+      <created>1755673859911</created>
+      <option name="number" value="00601" />
+      <option name="presentableId" value="LOCAL-00601" />
+      <option name="project" value="LOCAL" />
+      <updated>1755673859911</updated>
+    </task>
+    <task id="LOCAL-00602" summary=":construction_worker: cicd 진행중13">
+      <option name="closed" value="true" />
+      <created>1755674352439</created>
+      <option name="number" value="00602" />
+      <option name="presentableId" value="LOCAL-00602" />
+      <option name="project" value="LOCAL" />
+      <updated>1755674352439</updated>
+    </task>
+    <task id="LOCAL-00603" summary=":construction_worker: cicd 진행중14">
+      <option name="closed" value="true" />
+      <created>1755675334762</created>
+      <option name="number" value="00603" />
+      <option name="presentableId" value="LOCAL-00603" />
+      <option name="project" value="LOCAL" />
+      <updated>1755675334762</updated>
+    </task>
+    <task id="LOCAL-00604" summary=":construction_worker: cicd 진행중15">
+      <option name="closed" value="true" />
+      <created>1755675459186</created>
+      <option name="number" value="00604" />
+      <option name="presentableId" value="LOCAL-00604" />
+      <option name="project" value="LOCAL" />
+      <updated>1755675459186</updated>
+    </task>
+    <task id="LOCAL-00605" summary=":construction_worker: cicd 진행중16">
+      <option name="closed" value="true" />
+      <created>1755676554960</created>
+      <option name="number" value="00605" />
+      <option name="presentableId" value="LOCAL-00605" />
+      <option name="project" value="LOCAL" />
+      <updated>1755676554960</updated>
+    </task>
+    <task id="LOCAL-00606" summary=":construction_worker: cicd 진행중17">
+      <option name="closed" value="true" />
+      <created>1755678168639</created>
+      <option name="number" value="00606" />
+      <option name="presentableId" value="LOCAL-00606" />
+      <option name="project" value="LOCAL" />
+      <updated>1755678168639</updated>
+    </task>
+    <task id="LOCAL-00607" summary=":construction_worker: cicd 진행중 18">
+      <option name="closed" value="true" />
+      <created>1755678795922</created>
+      <option name="number" value="00607" />
+      <option name="presentableId" value="LOCAL-00607" />
+      <option name="project" value="LOCAL" />
+      <updated>1755678795922</updated>
+    </task>
+    <task id="LOCAL-00608" summary=":construction_worker: cicd 진행중 18">
+      <option name="closed" value="true" />
+      <created>1755679104653</created>
+      <option name="number" value="00608" />
+      <option name="presentableId" value="LOCAL-00608" />
+      <option name="project" value="LOCAL" />
+      <updated>1755679104653</updated>
+    </task>
+    <task id="LOCAL-00609" summary=":construction_worker: cicd 진행중 20">
+      <option name="closed" value="true" />
+      <created>1755679686358</created>
+      <option name="number" value="00609" />
+      <option name="presentableId" value="LOCAL-00609" />
+      <option name="project" value="LOCAL" />
+      <updated>1755679686358</updated>
+    </task>
+    <task id="LOCAL-00610" summary=":construction_worker: cicd 진행중 21 - build에러 수정">
+      <option name="closed" value="true" />
+      <created>1755680971552</created>
+      <option name="number" value="00610" />
+      <option name="presentableId" value="LOCAL-00610" />
+      <option name="project" value="LOCAL" />
+      <updated>1755680971553</updated>
+    </task>
+    <task id="LOCAL-00611" summary=":construction_worker: cicd 진행중 21 - ecosystem 확장자 변경">
+      <option name="closed" value="true" />
+      <created>1755681320324</created>
+      <option name="number" value="00611" />
+      <option name="presentableId" value="LOCAL-00611" />
+      <option name="project" value="LOCAL" />
+      <updated>1755681320325</updated>
+    </task>
+    <task id="LOCAL-00612" summary=":construction_worker: cicd 진행중 22 - ecosystem 확장자 변경2">
+      <option name="closed" value="true" />
+      <created>1755681460375</created>
+      <option name="number" value="00612" />
+      <option name="presentableId" value="LOCAL-00612" />
+      <option name="project" value="LOCAL" />
+      <updated>1755681460375</updated>
+    </task>
+    <task id="LOCAL-00613" summary=":construction_worker: cicd 진행중 23 - admin -&gt; ness로 변경">
+      <option name="closed" value="true" />
+      <created>1755682135111</created>
+      <option name="number" value="00613" />
+      <option name="presentableId" value="LOCAL-00613" />
+      <option name="project" value="LOCAL" />
+      <updated>1755682135112</updated>
+    </task>
+    <task id="LOCAL-00614" summary=":construction_worker: 일단 로컬 build로 진행중">
+      <option name="closed" value="true" />
+      <created>1755737572583</created>
+      <option name="number" value="00614" />
+      <option name="presentableId" value="LOCAL-00614" />
+      <option name="project" value="LOCAL" />
+      <updated>1755737572583</updated>
+    </task>
+    <task id="LOCAL-00615" summary=":construction_worker: cicd 진행중 24 pnpm-workspace.yaml 추가">
+      <option name="closed" value="true" />
+      <created>1755737737613</created>
+      <option name="number" value="00615" />
+      <option name="presentableId" value="LOCAL-00615" />
+      <option name="project" value="LOCAL" />
+      <updated>1755737737613</updated>
+    </task>
+    <task id="LOCAL-00616" summary=":construction_worker: cicd 진행중 25 permission 수정">
+      <option name="closed" value="true" />
+      <created>1755738388196</created>
+      <option name="number" value="00616" />
+      <option name="presentableId" value="LOCAL-00616" />
+      <option name="project" value="LOCAL" />
+      <updated>1755738388196</updated>
+    </task>
+    <task id="LOCAL-00617" summary=":construction_worker: cicd 진행중 26 - react-router-serve">
+      <option name="closed" value="true" />
+      <created>1755739363346</created>
+      <option name="number" value="00617" />
+      <option name="presentableId" value="LOCAL-00617" />
+      <option name="project" value="LOCAL" />
+      <updated>1755739363346</updated>
+    </task>
+    <task id="LOCAL-00618" summary=":construction_worker: 일단 pnpm start 성공">
+      <option name="closed" value="true" />
+      <created>1755740396191</created>
+      <option name="number" value="00618" />
+      <option name="presentableId" value="LOCAL-00618" />
+      <option name="project" value="LOCAL" />
+      <updated>1755740396191</updated>
+    </task>
+    <task id="LOCAL-00619" summary=":construction_worker: 일단 pnpm start 성공">
+      <option name="closed" value="true" />
+      <created>1755740649586</created>
+      <option name="number" value="00619" />
+      <option name="presentableId" value="LOCAL-00619" />
+      <option name="project" value="LOCAL" />
+      <updated>1755740649586</updated>
+    </task>
+    <task id="LOCAL-00620" summary=":construction_worker: ness 뺴는 set">
+      <option name="closed" value="true" />
+      <created>1755741435955</created>
+      <option name="number" value="00620" />
+      <option name="presentableId" value="LOCAL-00620" />
+      <option name="project" value="LOCAL" />
+      <updated>1755741435955</updated>
+    </task>
+    <task id="LOCAL-00621" summary=":construction_worker: 수정해야할 커밋, encrypt는 아직임">
+      <option name="closed" value="true" />
+      <created>1755742007715</created>
+      <option name="number" value="00621" />
+      <option name="presentableId" value="LOCAL-00621" />
+      <option name="project" value="LOCAL" />
+      <updated>1755742007715</updated>
+    </task>
+    <task id="LOCAL-00622" summary=":construction_worker: 일단 커밋">
+      <option name="closed" value="true" />
+      <created>1755743082089</created>
+      <option name="number" value="00622" />
+      <option name="presentableId" value="LOCAL-00622" />
+      <option name="project" value="LOCAL" />
+      <updated>1755743082089</updated>
+    </task>
+    <task id="LOCAL-00623" summary=":construction: 선배님 코드 이전 env 제외 작동 확인 코드">
+      <option name="closed" value="true" />
+      <created>1755743232204</created>
+      <option name="number" value="00623" />
+      <option name="presentableId" value="LOCAL-00623" />
+      <option name="project" value="LOCAL" />
+      <updated>1755743232204</updated>
+    </task>
+    <task id="LOCAL-00624" summary=":construction: 일단은 userGroup 디코딩 진행중">
+      <option name="closed" value="true" />
+      <created>1755750856162</created>
+      <option name="number" value="00624" />
+      <option name="presentableId" value="LOCAL-00624" />
+      <option name="project" value="LOCAL" />
+      <updated>1755750856162</updated>
+    </task>
+    <task id="LOCAL-00625" summary=":construction: 진행중">
+      <option name="closed" value="true" />
+      <created>1755755139591</created>
+      <option name="number" value="00625" />
+      <option name="presentableId" value="LOCAL-00625" />
+      <option name="project" value="LOCAL" />
+      <updated>1755755139591</updated>
+    </task>
+    <task id="LOCAL-00626" summary=":construction: 일단 로컬에서 진행 완료">
+      <option name="closed" value="true" />
+      <created>1755755637708</created>
+      <option name="number" value="00626" />
+      <option name="presentableId" value="LOCAL-00626" />
+      <option name="project" value="LOCAL" />
+      <updated>1755755637708</updated>
+    </task>
+    <task id="LOCAL-00627" summary=":construction: actions yml 및 ecosystem 추가">
+      <option name="closed" value="true" />
+      <created>1755755898140</created>
+      <option name="number" value="00627" />
+      <option name="presentableId" value="LOCAL-00627" />
+      <option name="project" value="LOCAL" />
+      <updated>1755755898140</updated>
+    </task>
+    <task id="LOCAL-00628" summary=":construction: actions yml 및 ecosystem 추가">
+      <option name="closed" value="true" />
+      <created>1755755910486</created>
+      <option name="number" value="00628" />
+      <option name="presentableId" value="LOCAL-00628" />
+      <option name="project" value="LOCAL" />
+      <updated>1755755910486</updated>
+    </task>
+    <task id="LOCAL-00629" summary=":construction: pnpm-lock 추가">
+      <option name="closed" value="true" />
+      <created>1755756652182</created>
+      <option name="number" value="00629" />
+      <option name="presentableId" value="LOCAL-00629" />
+      <option name="project" value="LOCAL" />
+      <updated>1755756652182</updated>
+    </task>
+    <task id="LOCAL-00630" summary=":construction: vite.config.ts 추가">
+      <option name="closed" value="true" />
+      <created>1755756812493</created>
+      <option name="number" value="00630" />
+      <option name="presentableId" value="LOCAL-00630" />
+      <option name="project" value="LOCAL" />
+      <updated>1755756812493</updated>
+    </task>
+    <task id="LOCAL-00631" summary=":construction: deploy-ness 주석">
+      <option name="closed" value="true" />
+      <created>1755760332326</created>
+      <option name="number" value="00631" />
+      <option name="presentableId" value="LOCAL-00631" />
+      <option name="project" value="LOCAL" />
+      <updated>1755760332326</updated>
+    </task>
+    <task id="LOCAL-00632" summary=":construction: 일단 진행중 로컬에서">
+      <option name="closed" value="true" />
+      <created>1756076229436</created>
+      <option name="number" value="00632" />
+      <option name="presentableId" value="LOCAL-00632" />
+      <option name="project" value="LOCAL" />
+      <updated>1756076229436</updated>
+    </task>
+    <option name="localTasksCounter" value="633" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="ness/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":construction_worker: cicd 진행중17" />
+    <MESSAGE value=":construction_worker: cicd 진행중 18" />
+    <MESSAGE value=":construction_worker: cicd 진행중 20" />
+    <MESSAGE value=":construction_worker: cicd 진행중 21 - build에러 수정" />
+    <MESSAGE value=":construction_worker: cicd 진행중 21 - ecosystem 확장자 변경" />
+    <MESSAGE value=":construction_worker: cicd 진행중 22 - ecosystem 확장자 변경2" />
+    <MESSAGE value=":construction_worker: cicd 진행중 23 - admin -&gt; ness로 변경" />
+    <MESSAGE value=":construction_worker: 일단 로컬 build로 진행중" />
+    <MESSAGE value=":construction_worker: cicd 진행중 24 pnpm-workspace.yaml 추가" />
+    <MESSAGE value=":construction_worker: cicd 진행중 25 permission 수정" />
+    <MESSAGE value=":construction_worker: cicd 진행중 26 - react-router-serve" />
+    <MESSAGE value=":construction_worker: 일단 pnpm start 성공" />
+    <MESSAGE value=":construction_worker: ness 뺴는 set" />
+    <MESSAGE value=":construction_worker: 수정해야할 커밋, encrypt는 아직임" />
+    <MESSAGE value=":construction_worker: 일단 커밋" />
+    <MESSAGE value=":construction: 선배님 코드 이전 env 제외 작동 확인 코드" />
+    <MESSAGE value=":construction: 일단은 userGroup 디코딩 진행중" />
+    <MESSAGE value=":construction: 일단은 선배님 코드 일일이 파악하며 진행중" />
+    <MESSAGE value=":construction: 진행중" />
+    <MESSAGE value=":construction: 일단 로컬에서 진행 완료" />
+    <MESSAGE value=":construction: actions yml 및 ecosystem 추가" />
+    <MESSAGE value=":construction: pnpm-lock 추가" />
+    <MESSAGE value=":construction: vite.config.ts 추가" />
+    <MESSAGE value=":construction: deploy-ness 주석" />
+    <MESSAGE value=":construction: 일단 진행중 로컬에서" />
+    <option name="LAST_COMMIT_MESSAGE" value=":construction: 일단 진행중 로컬에서" />
+  </component>
+</project>

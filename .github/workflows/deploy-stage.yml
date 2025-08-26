@@ -1,15 +1,15 @@
 name: Deploy ness-stage
 
-#on:
-#  pull_request:
-#    types: [closed]
-#    branches:
-#      - ness/stage
-
 on:
-  push:
-    branches:
-      - ness/stage-hg
+ pull_request:
+   types: [closed]
+   branches:
+     - ness/stage
+
+# on:
+#   push:
+#     branches:
+#       - ness/stage-hg
 
 jobs:
   deploy:

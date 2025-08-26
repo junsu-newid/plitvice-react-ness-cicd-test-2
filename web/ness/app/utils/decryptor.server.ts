@@ -54,12 +54,11 @@ export const decodeKey = (encryptedBase64: string, referenceDate: Date = new Dat
 
 export const getQueryKey = ({ request }: LoaderFunctionArgs) => {
     let userEncryptKey = '';
-    if (process.env.NODE_ENV === 'development') {
+    const url = new URL(request.url);
+    userEncryptKey = decodeURI(url.searchParams.get(ENCRYPT_KEY) || '');
+    if (process.env.NODE_ENV === 'development' && userEncryptKey === '') {
         userEncryptKey =
             'Dxx3A/E6rutyuUFcv3JBZBoTgn8buT4j7g5/FiqUhC0+FPj+qrkKB3nq2z/rqa1iY7xPNHDZfdiL9NH0RQs8yi3uUj3ADxTpbYcpBQNZK0ebBC2TxwrXqad5cngJ3y3rEE0QdweSQ+yxTbWRczTVoS5s97/iVXlifEpDeilcZ5pU63cKG96ppvcgbWt7MuI8HHOpk8a7VNhiaOjgP273wvf6ySnnuk7/dpjps9A0k+DJncV6dMlr95u9iRiMs6UkDunIdVzvcae89NCPv8IORf/+YvfST1cj1Cnsh5c1ChHMSrURjvVsp5ooFi/wHEzOe03DqFQw+eYGT9QT0E/N8FMyj7b6S8cJrtWufjBpNA==';
-    } else {
-        const url = new URL(request.url);
-        userEncryptKey = decodeURI(url.searchParams.get(ENCRYPT_KEY) || '');
     }
 
     return userEncryptKey;

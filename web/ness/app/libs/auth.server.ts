@@ -1,7 +1,7 @@
 import { type LoaderFunctionArgs, redirect } from 'react-router';
 import { ENCRYPT_KEY } from '@/types/enum.ts';
 import { decodeKey, getQueryKey } from '@/utils/decryptor.server.ts';
-import { commitSession, getSession } from '@/libs/session.server.ts';
+import { commitSession, destroySession, getSession } from '@/libs/session.server.ts';
 
 type LoaderCallback<T> = (
     args: LoaderFunctionArgs & { userEncryptKey: string; isNEWID: boolean; lang: string },
@@ -13,7 +13,7 @@ export const withSession = <T>(callback: LoaderCallback<T>) => {
         let userEncryptKey = getQueryKey(args as LoaderFunctionArgs);
         const lang = 'en'; // TODO: - language 가져오기
         // const lang = session.get('lang') || 'en';
-
+        console.log('userEncryptKey from loader', `${userEncryptKey}`);
         if (userEncryptKey) {
             session.set(ENCRYPT_KEY, userEncryptKey);
         } else {
@@ -21,6 +21,7 @@ export const withSession = <T>(callback: LoaderCallback<T>) => {
         }
 
         if (!userEncryptKey && !args.request.url.includes('/error')) {
+            await destroySession(session);
             return redirect('/error');
         }
 

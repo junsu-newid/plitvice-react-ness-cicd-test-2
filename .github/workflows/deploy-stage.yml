@@ -37,7 +37,7 @@ jobs:
 
       - name: Prepare deployment package (build + prod node_modules only)
         run: |
-          cp -r web/ness/build ness/
+          cp -r web/ness/build ness/build
           cp -r web/ness/node_modules ness/
           cp web/ness/package.json ness/
 

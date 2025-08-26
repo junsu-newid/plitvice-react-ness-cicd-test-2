@@ -39,7 +39,6 @@ jobs:
         run: |
           rm -rf ness .deploy_tmp
           mkdir -p ness
-          mkdir -p ness/build
           pnpm --filter ./web/ness --prod --legacy deploy .deploy_tmp
           mv .deploy_tmp/node_modules ness/
           cp .deploy_tmp/package.json ness/

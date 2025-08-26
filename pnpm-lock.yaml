@@ -385,6 +385,9 @@ importers:
       '@plitvice/util':
         specifier: workspace:*
         version: link:../../shared/util
+      '@react-router/node':
+        specifier: 'catalog:'
+        version: 7.8.1(react-router@7.8.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(typescript@5.8.2)
       '@react-router/serve':
         specifier: 'catalog:'
         version: 7.8.1(react-router@7.8.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(typescript@5.8.2)
@@ -449,9 +452,6 @@ importers:
       '@react-router/fs-routes':
         specifier: 'catalog:'
         version: 7.8.1(@react-router/dev@7.8.1(@react-router/serve@7.8.1(react-router@7.8.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(typescript@5.8.2))(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(react-dom@19.1.1(react@19.1.1))(react-router@7.8.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)(typescript@5.8.2)(vite@6.3.5(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0))(yaml@2.7.0))(typescript@5.8.2)
-      '@react-router/node':
-        specifier: 'catalog:'
-        version: 7.8.1(react-router@7.8.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(typescript@5.8.2)
       '@types/js-cookie':
         specifier: ^3.0.6
         version: 3.0.6

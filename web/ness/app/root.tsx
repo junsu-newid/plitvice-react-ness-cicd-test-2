@@ -1,7 +1,16 @@
 import { ReactNode, useMemo } from 'react';
 
 import { I18nextProvider, useTranslation } from 'react-i18next';
-import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
+import {
+    isRouteErrorResponse,
+    Links,
+    Meta,
+    Outlet,
+    Scripts,
+    ScrollRestoration,
+    useLocation,
+    useNavigate,
+} from 'react-router';
 
 import { TFunction } from 'i18next';
 
@@ -11,6 +20,7 @@ import { SideNavSection } from '@plitvice/ui/components/navigation/sideNavBar.ty
 
 import '@plitvice/ui/styles/global.css';
 
+import { getRouteFromUrl } from '@/components/layouts/operation.tsx';
 import { GlobalLoading } from '@/components';
 
 import i18n from '@/locales';
@@ -51,7 +61,21 @@ export default App;
 
 export const ErrorBoundary = ({ error }: Route.ErrorBoundaryProps) => {
     const { t } = useTranslation();
-    const navMap = useMemo(() => getNavMap(t), [t]);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const navMapList = useMemo(() => getNavMap(t), [t]);
+    const validRoutes = useMemo(() => {
+        const routes: string[] = [];
+        navMapList.forEach((section) => {
+            section.child?.forEach((item) => {
+                routes.push(item.path);
+            });
+        });
+        return routes;
+    }, [navMapList]);
+    const currentRoutePath = getRouteFromUrl(location.pathname, validRoutes);
+
     let message = 'Oops!';
     let details = 'An unexpected error occurred.';
     let stack: string | undefined;
@@ -67,7 +91,12 @@ export const ErrorBoundary = ({ error }: Route.ErrorBoundaryProps) => {
     return (
         <>
             <nav className={`h-full overflow-y-auto pb-[48px] pt-[24px]`}>
-                <SideNavBar width={0} sectionList={navMap} onNavigate={(path) => (document.location.href = path)} />
+                <SideNavBar
+                    width={0}
+                    sectionList={navMapList}
+                    onNavigate={navigate}
+                    defaultSelected={currentRoutePath}
+                />
             </nav>
             <main className={'bg-grey-5 border-grey-20 relative h-full w-full border-l'}>
                 <h1>{message}</h1>

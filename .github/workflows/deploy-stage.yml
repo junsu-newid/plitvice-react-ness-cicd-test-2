@@ -1,0 +1,79 @@
+name: Deploy ness-stage
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - ness/stage
+
+# on:
+#   push:
+#     branches:
+      # - ness/master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: stage
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.5.2
+
+      - name: Build web projects
+        run: |
+          pnpm -r install
+          pnpm -r --filter ./web/ness... build
+
+      - name: Create deployment directory (node_modules included)
+        run: |
+          pnpm --filter ./web/ness --prod --legacy deploy ness/
+
+      - name: Include built assets
+        run: |
+          mkdir -p ness/
+          cp -r web/ness/build ness/
+
+      - name: Upload deployment package
+        uses: actions/upload-artifact@v4
+        with:
+          name: ness-deployment
+          path: ness/
+          retention-days: 7
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      
+      - name: Shut down 
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
+            sh ${{ secrets.NESS_SCRIPT_SHUTDOWN }}
+            echo "Servers shut down successfully"
+          EOF
+          
+      - name: Deploy to EC2
+        env:
+          DEST: ${{ secrets.NESS_BUILD_PATH }}
+        run: |
+          echo "Deploying ness package via rsync..."
+          ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "mkdir -p \"$DEST\""
+          rsync -az --delete -e "ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=30 -o ServerAliveCountMax=10" ness/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:"$DEST/"
+      
+      - name: Restart
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
+            sh ${{ secrets.NESS_SCRIPT_REBOOT }}
+            echo "Servers rebooted successfully"
+          EOF
